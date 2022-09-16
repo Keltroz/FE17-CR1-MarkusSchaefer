@@ -23,7 +23,10 @@
   background: none;
   display: block;
   float: right;
-  width: 35px;
+
+  img {
+    width: 35px;
+  }
 }
 
 .navbar-links {

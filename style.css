@@ -23,6 +23,8 @@
   background: none;
   display: block;
   float: right;
+}
+.btn-header img {
   width: 35px;
 }
 
