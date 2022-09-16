@@ -1,9 +1,30 @@
-.split {
-  display: block;
+.navbar-left {
+  display: inline-block;
   text-align: left;
+  margin: 30px;
+  font-family: "Ms Madi", cursive;
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 40px;
 }
 
-.split span {
+.navbar-right {
+  font-size: 24px;
+  font-weight: bold;
   display: block;
   float: right;
+  line-height: 40px;
+  margin: 30px;
+}
+
+.btn {
+  margin-left: 30px;
+  border: 0;
+  background: none;
+  display: block;
+  float: right;
+}
+
+hr {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */
