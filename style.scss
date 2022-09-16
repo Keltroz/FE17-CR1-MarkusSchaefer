@@ -23,6 +23,7 @@
   background: none;
   display: block;
   float: right;
+  width: 35px;
 }
 
 .navbar-links {
@@ -140,16 +141,35 @@ footer {
 }
 
 .container-month {
-    display: flex;
-    width: 80%;
+  display: flex;
+  width: 80%;
 }
 
 .recipe-month-img {
-    margin: 3%;
-    margin-left: 10%;
+  margin: 3%;
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 480px) {
+
+  .header-left {
+    font-size: 24px;
+  }
+
+  .header-right {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    margin: 15px;
+  }
+  nav a {
+    font-size:12px;
+  }
+
+  .btn-header {
+    width: 20px;
+  }
 
   .container {
     width: 80%;
@@ -199,6 +219,13 @@ footer {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .navbar-links {
+    margin: 20px;
+  }
+  nav a {
+    font-size: 16px;
+  }
   .container {
     width: 80%;
     margin: auto;
