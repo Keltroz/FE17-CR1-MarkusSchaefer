@@ -1,3 +1,7 @@
+// ------Settings for main page
+
+// Header
+
 .header-left {
   display: inline-block;
   text-align: left;
@@ -11,7 +15,6 @@
 .header-right {
   font-size: 24px;
   font-weight: bold;
-  display: block;
   float: right;
   line-height: 40px;
   margin: 30px;
@@ -29,6 +32,8 @@
   }
 }
 
+// Navbar
+
 .navbar-links {
   display: flex;
   justify-content: space-evenly;
@@ -44,6 +49,8 @@ nav a {
     text-decoration: none;
   }
 }
+
+// Main content
 
 .container {
   width: 80%;
@@ -110,6 +117,8 @@ nav a {
   }
 }
 
+// Footer
+
 footer {
   background-color: black;
   color: white;
@@ -143,17 +152,95 @@ footer {
   }
 }
 
-.container-month {
-  display: flex;
-  width: 80%;
+// ------Settings for recipe of the month page
+
+// Main content
+
+h1 {
+  margin-top: 3%;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.recipe-month-img {
-  margin: 3%;
-  margin-left: 10%;
+h2 {
+  font-size: 30px;
 }
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.container-month {
+  width: 80%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+  .img-month {
+    position: relative;
+    width: 50%;
+    margin-right: 2%;
+  }
+
+  .method-month {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .grid-text {
+    width: 70%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+}
+
+// ------Settings for about page
+
+// Main content
+
+.container-about {
+  margin: 5% auto;
+  padding: 0.5% 2% 2% 2%;
+  background-color: rgba(245, 245, 245, 0.822);
+  width: 50%;
+
+  h1 {
+    text-align: start;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .images {
+    margin: 5% 0;
+    float: left;
+    width: 50%;
+  }
+
+  a {
+    color: rgb(0, 161, 139);
+    text-decoration: none;
+  }
+}
+
+// ------Settings for smartphones
 
 @media screen and (max-width: 480px) {
+  // ------Settings for main page
+
+  // Header
 
   .header-left {
     font-size: 24px;
@@ -163,16 +250,21 @@ footer {
     font-size: 20px;
   }
 
+  // Navbar
+
   .navbar-links {
     margin: 15px;
   }
+
   nav a {
-    font-size:12px;
+    font-size: 12px;
   }
 
   .btn-header {
     width: 20px;
   }
+
+  // Main content
 
   .container {
     width: 80%;
@@ -219,23 +311,58 @@ footer {
       grid-area: 9 / 1 / 9 / 1;
     }
   }
+
+  // ------Settings for recipe of the month (smartphones)
+
+  // Main content
+
+  .container-month {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .img-month {
+      width: 100%;
+    }
+
+    .method-month {
+      width: 100%;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
+// ------Settings for tablets
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  // ------Settings for main page
+
+  // Navbar
 
   .navbar-links {
     margin: 20px;
   }
+
   nav a {
     font-size: 16px;
   }
+
+  // Main content
+
   .container {
     width: 80%;
     margin: auto;
     padding: 5% 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 40px;
 
     .grid-img1 {

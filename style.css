@@ -11,7 +11,6 @@
 .header-right {
   font-size: 24px;
   font-weight: bold;
-  display: block;
   float: right;
   line-height: 40px;
   margin: 30px;
@@ -127,14 +126,71 @@ footer img {
   margin-bottom: 20px;
 }
 
-.container-month {
-  display: flex;
-  width: 80%;
+h1 {
+  margin-top: 3%;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.recipe-month-img {
-  margin: 3%;
-  margin-left: 10%;
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.container-month {
+  width: 80%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.container-month .img-month {
+  position: relative;
+  width: 50%;
+  margin-right: 2%;
+}
+.container-month .method-month {
+  width: 50%;
+  margin-left: 2%;
+}
+.container-month p {
+  font-size: 20px;
+}
+.container-month .grid-text {
+  width: 70%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.container-about {
+  margin: 5% auto;
+  padding: 0.5% 2% 2% 2%;
+  background-color: rgba(245, 245, 245, 0.822);
+  width: 50%;
+}
+.container-about h1 {
+  text-align: start;
+  font-family: "Dancing Script", cursive;
+}
+.container-about p {
+  font-size: 20px;
+}
+.container-about .images {
+  margin: 5% 0;
+  float: left;
+  width: 50%;
+}
+.container-about a {
+  color: rgb(0, 161, 139);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -189,6 +245,24 @@ footer img {
   .container .grid-img9 {
     grid-area: 9/1/9/1;
   }
+  .container-month {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .container-month .img-month {
+    width: 100%;
+  }
+  .container-month .method-month {
+    width: 100%;
+  }
+  .container-month p {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .navbar-links {
@@ -203,7 +277,7 @@ footer img {
     padding: 5% 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 40px;
   }
   .container .grid-img1 {
