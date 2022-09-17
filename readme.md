@@ -31,7 +31,8 @@ All the pages are also working for smartphones and tablets to showcase the media
 Installation
 ------------
 
-Clone the repository to your desktop.
+Clone or download the repository to your desktop.
+(If downloaded, extract all the files.)
 Open index.html in your browser.
 
 
